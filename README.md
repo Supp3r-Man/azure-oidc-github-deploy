@@ -1,6 +1,6 @@
 # azure-oidc-github-deploy
 
-![ci](https://github.com/Sup3rMar10/azure-oidc-github-deploy/actions/workflows/ci.yml/badge.svg)
+![ci](https://github.com/Supp3r-Man/azure-oidc-github-deploy/actions/workflows/ci.yml/badge.svg)
 
 **Keyless deployment from GitHub Actions to Azure, with the trust model written down and tested.** No client secret and no stored credential: a workflow's short-lived OIDC token is exchanged for an Entra access token through a *federated identity credential*. The Terraform creates two identities (a read-only one for pull requests, a Contributor on one resource group for the protected `production` environment), and the Python in `entra_guard/` answers the two questions that matter: **which tokens does each application accept, and what can they then do?**
 
